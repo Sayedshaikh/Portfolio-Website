@@ -35,6 +35,15 @@
     object-fit: cover;
   }
   
+  #about{
+    background-image: url("https://img.freepik.com/free-vector/black-geometric-memphis-social-banner_53876-116843.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
   #about .img,
   #about img,
   .hire-text h2 {
@@ -43,13 +52,19 @@
   
   /* Timeline background line */
   #about .img::before {
-    content: "";
-    left: 50%;
-    width: 4px;
-    position: absolute;
-    height: calc(100% + 140px);
-    background: var(--gray-color);
-  }
+  content: "";
+  left: 50%;
+  transform: translateX(-50%); /* Center align the line */
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+.hire-text{
+  height: calc(100% + 140px);
+  background: transparent;
+}
   
   #about img,
   #about .hire-text h2 {
@@ -57,9 +72,6 @@
     height: 140px;
   }
   
-  #about .hire-text h2 {
-    height: 140px;
-  }
   
   .social-icons a {
     width: 40px;
@@ -72,8 +84,8 @@
   }
   
   #cv img {
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
   }
   
   /* Contact section background image */
